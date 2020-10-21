@@ -10,7 +10,12 @@ roteador.use('/', (req, res)=>{
     console.log(req.body)
     
     const {usuario, senha, email} = req.body;
-    if (usuario =="ELLOSINTEGRA.FIN" && senha === "SENACGTI" && email =="" ){
+
+    console.log(usuario)
+    console.log(senha)
+    console.log(email)
+
+    if (usuario === "ELLOSINTEGRA.FIN" && senha === "SENACGTI" && email =="" ){
         res.status(200).send(('{"codigo": 1,"mensagem": "sucesso","token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjMyMDIsImdpZCI6WzEsMTQxLDUxMiwyMjFdLCJuYW1lIjoiRUxMT1MgIElOVEVHUkEgRklOIiwiZXhwIjo2MzczODkwOTc5NzU2NDUxMjEsImlhdCI6MH0.A9R_sIM_wQiRP7xjQO2GaG9Prte_ZBiOdRdyXCi98EU"}'))
     }
     else{
