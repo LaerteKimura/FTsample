@@ -6,7 +6,8 @@ const roteador = require('express').Router()
 roteador.use('/', (req, res)=>{
     res.setHeader("Access-Control-Allow-Headers", "content-type");
     res.setHeader("Content-Type", "application/json");
-    
+
+    console.log(req.header)
     console.log(req.body)
     
     const {usuario, senha, email} = req.body;
