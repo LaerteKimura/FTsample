@@ -7,7 +7,7 @@ roteador.use('/', (req, res)=>{
     res.setHeader("Access-Control-Allow-Headers", "content-type");
     res.setHeader("Content-Type", "application/json");
 
-    var auth = req.headers['Authorization']; 
+    var auth = req.headers['authorization']; 
     console.log(auth);
     console.log(req.body)
     
