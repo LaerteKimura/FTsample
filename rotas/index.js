@@ -7,7 +7,7 @@ roteador.use('/', (req, res)=>{
     res.setHeader("Access-Control-Allow-Headers", "content-type");
     res.setHeader("Content-Type", "application/json");
 
-    console.log(req.header)
+    console.log(JSON.stringify(req.headers));
     console.log(req.body)
     
     const {usuario, senha, email} = req.body;
