@@ -27,6 +27,8 @@ roteador.use('/', (req, res)=>{
             "token": ""
         }`)
     }
-})
+});
+
+
 
 module.exports = roteador;
