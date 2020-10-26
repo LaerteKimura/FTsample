@@ -17,6 +17,9 @@ app.get('/fichatecnica', (req,res)=>{
     console.log(auth);
     console.log(req.body)
 
+    const {COD_FICHA_TECNICA} = req.params;
+    console.log(COD_FICHA_TECNICA)
+
     res.status(200).send(`{
         "DATA": [
             {
